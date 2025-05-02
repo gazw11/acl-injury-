@@ -4,22 +4,19 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>ACL Resources</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      font-family: 'Inter', sans-serif;
-      background-color: #f4f9fd;
-      color: #333;
-      line-height: 1.6;
+      font-family: 'Poppins', sans-serif;
+      background-color: #E0E7FF;
+      color: #111827;
     }
 
     h1, h2 {
       text-align: center;
-      color: #1a3c53;
+      color: #4F46E5;
       margin: 30px 0;
-      font-size: 32px;
-      font-weight: 700;
     }
 
     .section {
@@ -28,98 +25,60 @@
       margin: auto;
     }
 
-    .resource-grid {
+    .resource-grid, .video-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 24px;
     }
 
-    .resource-card {
-      background-color: #ffffff;
-      padding: 24px;
+    .resource-card, .video-card {
+      background-color: #FFFFFF;
+      padding: 20px;
       border-radius: 16px;
-      box-shadow: 0 6px 14px rgba(0,0,0,0.05);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
       text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
-    .resource-card:hover {
+    .resource-card:hover, .video-card:hover {
       transform: translateY(-5px);
-      box-shadow: 0 12px 20px rgba(0,0,0,0.08);
-    }
-
-    .resource-card h3 {
-      margin: 12px 0;
-      font-size: 18px;
-      color: #0077b6;
-      font-weight: 600;
+      box-shadow: 0 12px 24px rgba(0,0,0,0.15);
     }
 
     .icon {
-      width: 52px;
-      height: 52px;
+      width: 60px;
       margin-bottom: 12px;
     }
 
     .download-btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      margin-top: 18px;
+      display: inline-block;
+      margin-top: 15px;
       padding: 10px 20px;
-      background: linear-gradient(135deg, #007bff, #0056b3);
-      color: white;
-      text-decoration: none;
+      background-color: #4F46E5;
+      color: #FFF;
       border-radius: 8px;
+      text-decoration: none;
       font-weight: 600;
-      font-size: 14px;
-      transition: background 0.3s;
+      transition: background-color 0.3s ease;
     }
 
     .download-btn:hover {
-      background: linear-gradient(135deg, #0056b3, #003f88);
-    }
-
-    .video-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      gap: 24px;
-      margin-top: 30px;
-    }
-
-    .video-card {
-      background-color: #ffffff;
-      border-radius: 16px;
-      padding: 16px;
-      box-shadow: 0 6px 14px rgba(0,0,0,0.05);
-      text-align: center;
-    }
-
-    .video-card h3 {
-      font-size: 16px;
-      margin-bottom: 10px;
-      color: #1a3c53;
+      background-color: #3730A3;
     }
 
     .video-card iframe {
       width: 100%;
       height: 200px;
       border: none;
-      border-radius: 8px;
+      border-radius: 12px;
     }
 
     footer {
       text-align: center;
       padding: 20px;
-      font-size: 14px;
-      color: #777;
-      border-top: 1px solid #ddd;
-      background-color: #f1f1f1;
-      margin-top: 60px;
-    }
-
-    html {
-      scroll-behavior: smooth;
+      background-color: #F3F4F6;
+      color: #6B7280;
+      margin-top: 40px;
     }
   </style>
 </head>
@@ -131,33 +90,33 @@
     <div class="resource-grid">
 
       <div class="resource-card">
-        <img class="icon" src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="ACL Icon">
+        <img class="icon" src="https://cdn-icons-png.flaticon.com/512/2920/2920266.png" alt="Data Icon">
         <h3>Other Data for ACL</h3>
-        <a class="download-btn" href="https://limewire.com/d/5ghqb#Gop2EQfoU3" target="_blank">⬇️ Download</a>
+        <a class="download-btn" href="https://limewire.com/d/5ghqb#Gop2EQfoU3" target="_blank">Download</a>
       </div>
 
       <div class="resource-card">
-        <img class="icon" src="https://cdn-icons-png.flaticon.com/512/3321/3321946.png" alt="Brochure Icon">
-        <h3>ACL Brochure</h3>
-        <a class="download-btn" href="https://limewire.com/d/j6A98#MbZ8cbDvQm" target="_blank">⬇️ Download</a>
+        <img class="icon" src="https://cdn-icons-png.flaticon.com/512/3176/3176366.png" alt="Brochure Icon">
+        <h3>Brochure of ACL</h3>
+        <a class="download-btn" href="https://limewire.com/d/j6A98#MbZ8cbDvQm" target="_blank">Download</a>
       </div>
 
       <div class="resource-card">
-        <img class="icon" src="https://cdn-icons-png.flaticon.com/512/3190/3190434.png" alt="Banner Icon">
-        <h3>ACL Banner</h3>
-        <a class="download-btn" href="https://limewire.com/d/e6e4032f-af81-4cb2-93f6-3de4828ea2af#9dg0nwcQaSjEe3Rt4iKPPWarJcQTuOD63ss0Gi0Ks78" target="_blank">⬇️ Download</a>
+        <img class="icon" src="https://cdn-icons-png.flaticon.com/512/2857/2857383.png" alt="Banner Icon">
+        <h3>Banner of ACL</h3>
+        <a class="download-btn" href="https://limewire.com/d/e6e4032f-af81-4cb2-93f6-3de4828ea2af#9dg0nwcQaSjEe3Rt4iKPPWarJcQTuOD63ss0Gi0Ks78" target="_blank">Download</a>
       </div>
 
       <div class="resource-card">
-        <img class="icon" src="https://cdn-icons-png.flaticon.com/512/4375/4375312.png" alt="Case Study Icon">
-        <h3>ACL Case Study</h3>
-        <a class="download-btn" href="https://limewire.com/d/MmVXI#98dTytKf5h" target="_blank">⬇️ Download</a>
+        <img class="icon" src="https://cdn-icons-png.flaticon.com/512/2738/2738899.png" alt="Case Study Icon">
+        <h3>Case of ACL</h3>
+        <a class="download-btn" href="https://limewire.com/d/MmVXI#98dTytKf5h" target="_blank">Download</a>
       </div>
 
       <div class="resource-card">
-        <img class="icon" src="https://cdn-icons-png.flaticon.com/512/4712/4712109.png" alt="Presentation Icon">
-        <h3>ACL Presentation</h3>
-        <a class="download-btn" href="https://limewire.com/d/gEbgZ#tprJUcYXUp" target="_blank">⬇️ Download</a>
+        <img class="icon" src="https://cdn-icons-png.flaticon.com/512/4743/4743366.png" alt="Presentation Icon">
+        <h3>Presentation of ACL</h3>
+        <a class="download-btn" href="https://limewire.com/d/gEbgZ#tprJUcYXUp" target="_blank">Download</a>
       </div>
 
     </div>
@@ -200,7 +159,7 @@
 
   <!-- Footer -->
   <footer>
-    <p>© 2025 Amr Yasser. All rights reserved.</p>
+    Website by Amr Yasser | 2025
   </footer>
 
 </body>
