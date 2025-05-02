@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>موارد ACL</title>
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&display=swap" rel="stylesheet">
+  <title>ACL Resources</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      font-family: 'Cairo', sans-serif;
+      font-family: 'Inter', sans-serif;
       background-color: #f4f9fd;
       color: #333;
       line-height: 1.6;
@@ -16,12 +16,14 @@
 
     h1, h2 {
       text-align: center;
-      color: #205072;
+      color: #1a3c53;
       margin: 30px 0;
+      font-size: 32px;
+      font-weight: 700;
     }
 
     .section {
-      padding: 40px 20px;
+      padding: 50px 20px;
       max-width: 1200px;
       margin: auto;
     }
@@ -29,70 +31,74 @@
     .resource-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 20px;
+      gap: 24px;
     }
 
     .resource-card {
       background-color: #ffffff;
-      padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-      transition: transform 0.3s ease;
+      padding: 24px;
+      border-radius: 16px;
+      box-shadow: 0 6px 14px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
       text-align: center;
     }
 
     .resource-card:hover {
       transform: translateY(-5px);
-      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+      box-shadow: 0 12px 20px rgba(0,0,0,0.08);
     }
 
     .resource-card h3 {
-      margin: 10px 0;
+      margin: 12px 0;
       font-size: 18px;
-      color: #1565c0;
+      color: #0077b6;
+      font-weight: 600;
     }
 
     .icon {
-      width: 48px;
-      height: 48px;
-      margin-bottom: 10px;
+      width: 52px;
+      height: 52px;
+      margin-bottom: 12px;
     }
 
     .download-btn {
-      display: inline-block;
-      margin-top: 15px;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 18px;
       padding: 10px 20px;
-      background-color: #1565c0;
+      background: linear-gradient(135deg, #007bff, #0056b3);
       color: white;
       text-decoration: none;
-      border-radius: 6px;
+      border-radius: 8px;
       font-weight: 600;
-      transition: background-color 0.3s;
+      font-size: 14px;
+      transition: background 0.3s;
     }
 
     .download-btn:hover {
-      background-color: #0d47a1;
+      background: linear-gradient(135deg, #0056b3, #003f88);
     }
 
     .video-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      gap: 20px;
+      gap: 24px;
       margin-top: 30px;
     }
 
     .video-card {
-      background-color: #fff;
-      border-radius: 12px;
-      padding: 15px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      background-color: #ffffff;
+      border-radius: 16px;
+      padding: 16px;
+      box-shadow: 0 6px 14px rgba(0,0,0,0.05);
       text-align: center;
     }
 
     .video-card h3 {
       font-size: 16px;
       margin-bottom: 10px;
-      color: #205072;
+      color: #1a3c53;
     }
 
     .video-card iframe {
@@ -104,12 +110,16 @@
 
     footer {
       text-align: center;
-      padding: 20px 10px;
-      font-size: 13px;
+      padding: 20px;
+      font-size: 14px;
       color: #777;
       border-top: 1px solid #ddd;
-      margin-top: 40px;
       background-color: #f1f1f1;
+      margin-top: 60px;
+    }
+
+    html {
+      scroll-behavior: smooth;
     }
   </style>
 </head>
@@ -117,37 +127,37 @@
 
   <!-- Resources Section -->
   <section class="section">
-    <h2> Project Contant of ACL </h2>
+    <h2>ACL Project Resources</h2>
     <div class="resource-grid">
 
       <div class="resource-card">
         <img class="icon" src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="ACL Icon">
-        <h3>other Data for ACL</h3>
-        <a class="download-btn" href="https://limewire.com/d/5ghqb#Gop2EQfoU3" target="_blank">تحميل</a>
+        <h3>Other Data for ACL</h3>
+        <a class="download-btn" href="https://limewire.com/d/5ghqb#Gop2EQfoU3" target="_blank">⬇️ Download</a>
       </div>
 
       <div class="resource-card">
         <img class="icon" src="https://cdn-icons-png.flaticon.com/512/3321/3321946.png" alt="Brochure Icon">
-        <h3>Brochure of ACL</h3>
-        <a class="download-btn" href="https://limewire.com/d/j6A98#MbZ8cbDvQm" target="_blank">تحميل</a>
+        <h3>ACL Brochure</h3>
+        <a class="download-btn" href="https://limewire.com/d/j6A98#MbZ8cbDvQm" target="_blank">⬇️ Download</a>
       </div>
 
       <div class="resource-card">
         <img class="icon" src="https://cdn-icons-png.flaticon.com/512/3190/3190434.png" alt="Banner Icon">
-        <h3>Banner of ACL </h3>
-        <a class="download-btn" href="https://limewire.com/d/e6e4032f-af81-4cb2-93f6-3de4828ea2af#9dg0nwcQaSjEe3Rt4iKPPWarJcQTuOD63ss0Gi0Ks78" target="_blank">تحميل</a>
+        <h3>ACL Banner</h3>
+        <a class="download-btn" href="https://limewire.com/d/e6e4032f-af81-4cb2-93f6-3de4828ea2af#9dg0nwcQaSjEe3Rt4iKPPWarJcQTuOD63ss0Gi0Ks78" target="_blank">⬇️ Download</a>
       </div>
 
       <div class="resource-card">
         <img class="icon" src="https://cdn-icons-png.flaticon.com/512/4375/4375312.png" alt="Case Study Icon">
-        <h3>Case of ACL</h3>
-        <a class="download-btn" href="https://limewire.com/d/MmVXI#98dTytKf5h" target="_blank">تحميل</a>
+        <h3>ACL Case Study</h3>
+        <a class="download-btn" href="https://limewire.com/d/MmVXI#98dTytKf5h" target="_blank">⬇️ Download</a>
       </div>
 
       <div class="resource-card">
         <img class="icon" src="https://cdn-icons-png.flaticon.com/512/4712/4712109.png" alt="Presentation Icon">
-        <h3>Presentation of ACL</h3>
-        <a class="download-btn" href="https://limewire.com/d/gEbgZ#tprJUcYXUp" target="_blank">تحميل</a>
+        <h3>ACL Presentation</h3>
+        <a class="download-btn" href="https://limewire.com/d/gEbgZ#tprJUcYXUp" target="_blank">⬇️ Download</a>
       </div>
 
     </div>
@@ -155,26 +165,26 @@
 
   <!-- Videos Section -->
   <section class="section">
-    <h2>Videos for ACL</h2>
+    <h2>ACL Educational Videos</h2>
     <div class="video-grid">
       <div class="video-card">
-        <h3>Test for ACL injury </h3>
+        <h3>ACL Injury Test</h3>
         <iframe src="https://www.youtube.com/embed/vEQw-G1Vr18" allowfullscreen></iframe>
       </div>
       <div class="video-card">
-        <h3>Surgery for ACL</h3>
+        <h3>ACL Surgery</h3>
         <iframe src="https://www.youtube.com/embed/2kjER1wkjzo" allowfullscreen></iframe>
       </div>
       <div class="video-card">
-        <h3>Mechanism of injury </h3>
+        <h3>Injury Mechanism</h3>
         <iframe src="https://www.youtube.com/embed/eWceE2WK74A" allowfullscreen></iframe>
       </div>
       <div class="video-card">
-        <h3>Electrotherapy </h3>
+        <h3>Electrotherapy</h3>
         <iframe src="https://www.youtube.com/embed/fgLmeajvzzI" allowfullscreen></iframe>
       </div>
       <div class="video-card">
-        <h3>Therapeutic Exercises </h3>
+        <h3>Therapeutic Exercises</h3>
         <iframe src="https://www.youtube.com/embed/yqWKzJJMyTY" allowfullscreen></iframe>
       </div>
       <div class="video-card">
@@ -182,7 +192,7 @@
         <iframe src="https://www.youtube.com/embed/0bBEa22Dus0" allowfullscreen></iframe>
       </div>
       <div class="video-card">
-        <h3>knee joint  content </h3>
+        <h3>Knee Joint Content</h3>
         <iframe src="https://www.youtube.com/embed/ufU6EH-rVGw" allowfullscreen></iframe>
       </div>
     </div>
@@ -190,7 +200,7 @@
 
   <!-- Footer -->
   <footer>
-    website by Amr Yasser
+    <p>© 2025 Amr Yasser. All rights reserved.</p>
   </footer>
 
 </body>
