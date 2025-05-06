@@ -81,7 +81,7 @@
       margin-top: 40px;
     }
 
-    /* New Text Under the Video Section */
+    /* Centered Text */
     .question-text {
       text-align: center;
       color: black;
@@ -89,8 +89,12 @@
       padding: 20px;
       background-color: #E0E7FF; /* Same as the website background color */
       margin-top: 40px;
+      width: 100%; /* To make sure it's full width */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100px; /* Adjust this as necessary */
     }
-
   </style>
 </head>
 <body>
@@ -167,7 +171,12 @@
       </div>
     </div>
   </section>
-<h3>Any Questions Search in Google</h3>
+
+  <!-- Centered Question Text -->
+  <div class="question-text">
+    Any Questions Search in Google
+  </div>
+
   <!-- Footer -->
   <footer>
     Website by | Amr Yasser | 2025
