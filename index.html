@@ -159,6 +159,28 @@
       color: #6B7280;
       margin-top: 40px;
     }
+
+    /* Scroll to top button */
+    .back-to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #4F46E5;
+      color: #fff;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      font-size: 24px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .back-to-top:hover {
+      background-color: #3730A3;
+    }
   </style>
 </head>
 <body>
@@ -250,10 +272,28 @@
     Website by | Amr Yasser | 2025
   </footer>
 
+  <div class="back-to-top" id="backToTop" onclick="scrollToTop()">↑</div>
+
   <script>
     function toggleMenu() {
       const nav = document.getElementById('navLinks');
       nav.classList.toggle('show');
+    }
+
+    // Show or hide back-to-top button
+    window.onscroll = function() {
+      const backToTop = document.getElementById('backToTop');
+      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        backToTop.style.display = "block";
+      } else {
+        backToTop.style.display = "none";
+      }
+    };
+
+    // Scroll to top function
+    function scrollToTop() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
     }
   </script>
 </body>
