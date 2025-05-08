@@ -160,7 +160,6 @@
       margin-top: 40px;
     }
 
-    /* Scroll to top button */
     .back-to-top {
       position: fixed;
       bottom: 20px;
@@ -181,6 +180,34 @@
     .back-to-top:hover {
       background-color: #3730A3;
     }
+
+    /* ===== About Us Flexbox Layout ===== */
+    .about-us-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .about-text {
+      flex: 1;
+      min-width: 280px;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    .about-image {
+      flex: 1;
+      min-width: 280px;
+      text-align: center;
+    }
+
+    .about-image img {
+      max-width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
   </style>
 </head>
 <body>
@@ -188,8 +215,8 @@
     <div class="logo">ACL Project</div>
     <button class="menu-toggle" onclick="toggleMenu()">☰</button>
     <div class="nav-links" id="navLinks">
-      <a href="#home">Home</a> <!-- Added About Us Link -->
-      <a href="#about">About</a>  
+      <a href="#home">Home</a>
+      <a href="#about-us">About</a>
       <a href="#resources">Resources</a>
       <a href="#videos">Videos</a>
     </div>
@@ -198,17 +225,19 @@
   <!-- About Us Section -->
   <section class="section" id="about-us">
     <h2>About Us</h2>
-    <p>
-     Hello,
-      We are a team of physical therapy Group (B) students at BUC 
-        ,We are passionate about the rehabilitation of ACL injuries
-         ,Our goal is to provide helpful resources and support for those affected by ACL injuries through education
+    <div class="about-us-container">
+      <div class="about-text">
+        <p>
+          Hello,<br>
+          We are a team of physical therapy Group (B) students at BUC.<br><br>
+          We are passionate about the rehabilitation of ACL injuries.<br>
+          Our goal is to provide helpful resources and support for those affected by ACL injuries through education
           and specialized rehabilitation techniques:<br><br>
           <strong>“Rehabilitation of Anterior Cruciate Ligament (ACL) Injury.”</strong>
         </p>
       </div>
-      <div class="intro-image">
-        <img src="photo_2025-05-08_23-41-58.jpg" alt="downloads">
+      <div class="about-image">
+        <img src="photo_2025-05-08_23-41-58.jpg" alt="ACL Team Photo">
       </div>
     </div>
   </section>
@@ -219,104 +248,75 @@
     <div class="about">
       This project aims to raise awareness about Anterior Cruciate Ligament (ACL) injuries.
       It Provides downloadable educational resources and instructional videos covering diagnosis, surgery, and rehabilitation techniques.
-      It's useful for students, athletes, and physical therapy professionals our project is
+      It's useful for students, athletes, and physical therapy professionals.
     </div>
   </section>
-    
+
   <!-- Resources Section -->
   <section class="section" id="resources">
-    <h2>ACL Project Resources</h2>
+    <h2>Resources</h2>
     <div class="resource-grid">
       <div class="resource-card">
-        <img class="icon" src="https://cdn-icons-png.flaticon.com/512/2920/2920266.png" alt="Data Icon">
-        <h3>Other data for ACL</h3>
-        <a class="download-btn" href="downloads/acl-data.pdf" download>Download</a>
+        <img src="pdf-icon.png" alt="PDF Icon" class="icon">
+        <h3>ACL Anatomy</h3>
+        <a href="resources/acl-anatomy.pdf" class="download-btn" download>Download PDF</a>
       </div>
       <div class="resource-card">
-        <img class="icon" src="https://cdn-icons-png.flaticon.com/512/3176/3176366.png" alt="Brochure Icon">
-        <h3>Brochure of ACL</h3>
-        <a class="download-btn" href="downloads/acl-brochure.pdf" download>Download</a>
+        <img src="pdf-icon.png" alt="PDF Icon" class="icon">
+        <h3>Rehab Protocol</h3>
+        <a href="resources/rehab-protocol.pdf" class="download-btn" download>Download PDF</a>
       </div>
       <div class="resource-card">
-        <img class="icon" src="https://cdn-icons-png.flaticon.com/512/2857/2857383.png" alt="Banner Icon">
-        <h3>Banner of ACL</h3>
-        <a class="download-btn" href="downloads/acl-banner.pdf" download>Download</a>
-      </div>
-      <div class="resource-card">
-        <img class="icon" src="https://cdn-icons-png.flaticon.com/512/2738/2738899.png" alt="Case Study Icon">
-        <h3>Case of ACL</h3>
-        <a class="download-btn" href="downloads/acl-case.pdf" download>Download</a>
-      </div>
-      <div class="resource-card">
-        <img class="icon" src="https://cdn-icons-png.flaticon.com/512/4743/4743366.png" alt="Presentation Icon">
-        <h3>Presentation of ACL</h3>
-        <a class="download-btn" href="downloads/acl-presentation.pdf" download>Download</a>
+        <img src="pdf-icon.png" alt="PDF Icon" class="icon">
+        <h3>Diagnosis Guide</h3>
+        <a href="resources/diagnosis-guide.pdf" class="download-btn" download>Download PDF</a>
       </div>
     </div>
   </section>
 
   <!-- Videos Section -->
   <section class="section" id="videos">
-    <h2>ACL Educational Videos</h2>
+    <h2>Instructional Videos</h2>
     <div class="video-grid">
       <div class="video-card">
-        <h3>ACL Injury Test</h3>
-        <iframe src="https://www.youtube.com/embed/vEQw-G1Vr18" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/VIDEO_ID_1" allowfullscreen></iframe>
+        <h4>ACL Surgery Overview</h4>
       </div>
       <div class="video-card">
-        <h3>ACL Surgery</h3>
-        <iframe src="https://www.youtube.com/embed/2kjER1wkjzo" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/VIDEO_ID_2" allowfullscreen></iframe>
+        <h4>Rehab Exercises</h4>
       </div>
       <div class="video-card">
-        <h3>Injury Mechanism</h3>
-        <iframe src="https://www.youtube.com/embed/eWceE2WK74A" allowfullscreen></iframe>
-      </div>
-      <div class="video-card">
-        <h3>Electrotherapy</h3>
-        <iframe src="https://www.youtube.com/embed/fgLmeajvzzI" allowfullscreen></iframe>
-      </div>
-      <div class="video-card">
-        <h3>Therapeutic Exercises</h3>
-        <iframe src="https://www.youtube.com/embed/yqWKzJJMyTY" allowfullscreen></iframe>
-      </div>
-      <div class="video-card">
-        <h3>Hydrotherapy</h3>
-        <iframe src="https://www.youtube.com/embed/0bBEa22Dus0" allowfullscreen></iframe>
-      </div>
-      <div class="video-card">
-        <h3>Knee Joint Content</h3>
-        <iframe src="https://www.youtube.com/embed/ufU6EH-rVGw" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/VIDEO_ID_3" allowfullscreen></iframe>
+        <h4>Post-Op Care Tips</h4>
       </div>
     </div>
   </section>
 
   <footer>
-    Website by | Amr Yasser | 2025
+    &copy; 2025 ACL Rehab Project - All Rights Reserved
   </footer>
 
   <div class="back-to-top" id="backToTop" onclick="scrollToTop()">↑</div>
 
   <script>
     function toggleMenu() {
-      const nav = document.getElementById('navLinks');
-      nav.classList.toggle('show');
+      const navLinks = document.getElementById('navLinks');
+      navLinks.classList.toggle('show');
     }
 
-    // Show or hide back-to-top button
-    window.onscroll = function() {
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    window.onscroll = function () {
       const backToTop = document.getElementById('backToTop');
       if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        backToTop.style.display = "block";
+        backToTop.style.display = 'flex';
       } else {
-        backToTop.style.display = "none";
+        backToTop.style.display = 'none';
       }
     };
-
-    // Scroll to top function
-    function scrollToTop() {
-      document.body.scrollTop = 0;
-      document.documentElement.scrollTop = 0;
-    }
   </script>
 </body>
 </html>
