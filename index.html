@@ -83,8 +83,11 @@
       }
 
       .about-us-container {
-        flex-direction: column-reverse;
-        text-align: center;
+        flex-direction: column;
+      }
+
+      .about-image {
+        order: -1;
       }
     }
 
@@ -98,6 +101,12 @@
       padding: 50px 20px;
       max-width: 1200px;
       margin: auto;
+      opacity: 0;
+      transition: opacity 1s ease-out;
+    }
+
+    .section.visible {
+      opacity: 1;
     }
 
     .about {
@@ -220,7 +229,7 @@
     <button class="menu-toggle" onclick="toggleMenu()">☰</button>
     <div class="nav-links" id="navLinks">
       <a href="#about-us">Home</a>
-      <a href="#about our project">About</a>
+      <a href="#about">About</a>
       <a href="#resources">Resources</a>
       <a href="#videos">Videos</a>
     </div>
@@ -236,7 +245,7 @@
           We are a team of physical therapy Group (B) students at BUC.<br><br>
           We are passionate about the rehabilitation of ACL injuries.<br>
           Our goal is to provide helpful resources and support for those affected by ACL injuries through education
-          and specialized rehabilitation techniques our project is :<br><br>
+          and specialized rehabilitation techniques:<br><br>
           <strong>“Rehabilitation of Anterior Cruciate Ligament (ACL) Injury.”</strong>
         </p>
       </div>
@@ -246,7 +255,7 @@
     </div>
   </section>
 
-  <!-- About Section -->
+  <!-- About Project Section -->
   <section class="section" id="about">
     <h2>About our Project</h2>
     <div class="about">
@@ -347,6 +356,16 @@
         backToTop.style.display = 'none';
       }
     };
+
+    // Fade-in effect
+    window.addEventListener('scroll', function () {
+      const sections = document.querySelectorAll('.section');
+      sections.forEach(function (section) {
+        if (section.getBoundingClientRect().top < window.innerHeight) {
+          section.classList.add('visible');
+        }
+      });
+    });
   </script>
 </body>
 </html>
